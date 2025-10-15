@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempcal</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+        <hr>
+        <p>
+            <em>A simple system for converting between temperature units.</em>
+        </p>
+    </header>
+    <main class="container">
+
+        <div class="input-container">
+            <div class="converter">
+                <label for="celcius">Celcius: </label>
+                <div class="input-box">
+                    <input type="text" class="input" name="celcius" id="celcius" autocomplete="off">
+                    <span class="symbol">&deg;C</span>
+                </div>
+            </div>
+            <div class="converter">
+                <label for="celcius">Fahrenheit: </label>
+                <div class="input-box">
+                    <input type="text" class="input" name="fahrenheit" id="fahrenheit">
+                    <span class="symbol">&deg;F</span>
+                </div>
+            </div>
+            <div class="converter">
+                <label for="reamur">Reamur: </label>
+                <div class="input-box">
+                    <input type="text" class="input" name="reamur" id="reamur">
+                    <span class="symbol">&deg;R</span>
+                </div>
+            </div>
+            <div class="converter">
+                <label for="kelvin">Kelvin: </label>
+                <div class="input-box">
+                    <input type="text" class="input" name="kelvin" id="kelvin">
+                    <span class="symbol">K</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="advice-container">
+            <p class="advice" id="advice"></p>
+        </div>
+
+        <button class="btn btn-dark" id="clear">Clear</button>
+        <!-- <button id="button-convert">Convert</button> -->
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
