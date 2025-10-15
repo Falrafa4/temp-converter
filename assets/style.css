@@ -90,7 +90,6 @@ main.container {
 }
 
 .converter label {
-    /* width: 25%; */
     display: inline-block;
 }
 
@@ -153,7 +152,6 @@ main.container {
     }
 
     .converter {
-        /* flex-direction: column; */
         align-items: center;
         width: fit-content;
     }
@@ -163,7 +161,6 @@ main.container {
     }
 
     .converter .input-box {
-        /* justify-content: space-between; */
         width: 100%;
     }
 
