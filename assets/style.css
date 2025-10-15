@@ -17,6 +17,22 @@ body {
     scroll-behavior: smooth;
 }
 
+h1, p, div, em, header, main {
+    animation: coolTransition .5s;
+}
+
+@keyframes coolTransition {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .btn {
     margin: 1rem 0;
     width: 100%;
@@ -64,6 +80,7 @@ main.container {
     margin: 2rem auto;
     line-height: 200%;
     font-size: large;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.05);
 }
 
 .input-container {
@@ -83,6 +100,7 @@ main.container {
 }
 
 .converter .input-box {
+    width: 70%;
     display: flex;
     gap: 0.5rem;
 }
@@ -93,6 +111,7 @@ main.container {
 }
 
 .converter input {
+    width: 100%;
     text-align: right;
     font-size: inherit;
     color: var(--dark);
@@ -102,6 +121,57 @@ main.container {
     border-bottom: 1px solid black;
 }
 
+.converter input::placeholder {
+    font-family: "Raleway", sans-serif;
+}
+
 .advice-container {
     margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    p, label, input {
+        font-size: 1rem !important;
+    }
+
+    em {
+        font-size: 0.9rem;
+        line-height: 160%;
+    }
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    main.container {
+        width: 90%;
+        padding: 2rem 3rem;
+    }
+
+    .converter {
+        /* flex-direction: column; */
+        align-items: center;
+        width: fit-content;
+    }
+
+    .converter label {
+        width: 100%;
+    }
+
+    .converter .input-box {
+        /* justify-content: space-between; */
+        width: 100%;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .converter input {
+        width: 100%;
+    }
 }

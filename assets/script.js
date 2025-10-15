@@ -15,11 +15,12 @@ outputAdvice.innerHTML = localStorage.getItem('output');
 
 // converter
 inputs.forEach(input => {
-    input.addEventListener('change', event => {
+    input.addEventListener('change', (event) => {
         console.log("halo");
         const currentValue = parseInt(event.target.value);
+        event.target.value = currentValue;
 
-        // validasi input apabila kosong atau bukan angka
+        // validasi input bukan angka
         if (isNaN(currentValue) || currentValue == '') {
             celcius.value = '';
             fahrenheit.value = '';
@@ -84,7 +85,6 @@ inputs.forEach(input => {
             outputAdvice.innerHTML = "The weather is very hot. Avoid strenuous outdoor activities, use sunscreen, and stay in air-conditioned rooms if possible.";
         }
 
-
         // simpan nilai suhu ke localstorage agar user bisa lihat perhitungan sebelumnya tanpa kehilangan saat di-refresh
         localStorage.setItem('celcius', celcius.value);
         localStorage.setItem('fahrenheit', fahrenheit.value);
@@ -94,6 +94,7 @@ inputs.forEach(input => {
     })
 });
 
+// clear input
 document.getElementById('clear').addEventListener("click", () => {
     celcius.value = '';
     fahrenheit.value = '';
@@ -106,4 +107,4 @@ document.getElementById('clear').addEventListener("click", () => {
     localStorage.setItem('kelvin', '');
     localStorage.setItem('reamur', '');
     localStorage.setItem('output', '');
-})
+});
