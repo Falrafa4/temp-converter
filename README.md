@@ -14,12 +14,12 @@ A simple system for converting between temperature units. In addition, this syst
 5. Check the suggested activities
 
 ## Structure Project
-temperature-converter
-│ index.html
-│ README.md
-│
-└───assets
-├── script.js
+temperature-converter  
+│ index.html  
+│ README.md  
+│  
+└───assets  
+├── script.js  
 └── style.css
 
 - ```index.html``` is used to create structure page and display element.
@@ -36,5 +36,5 @@ temperature-converter
 The project idea was from [100jsprojects](https://www.100jsprojects.com/project/temperature-converter).
 
 ## Attachments
-Presentation Video Link : [YouTube](https://youtu.be/rO6OW0sKO00?si=XfZjhmRCfKWH3h4l)
+Presentation Video Link : [YouTube](https://youtu.be/rO6OW0sKO00?si=XfZjhmRCfKWH3h4l)  
 Website Link : [GitHub Pages](https://falrafa4.github.io/temp-converter/)
