@@ -16,7 +16,6 @@ outputAdvice.innerHTML = localStorage.getItem('output');
 // converter
 inputs.forEach(input => {
     input.addEventListener('change', (event) => {
-        console.log("halo");
         const currentValue = parseInt(event.target.value);
         event.target.value = currentValue;
 
